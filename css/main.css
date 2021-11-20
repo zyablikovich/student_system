@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+  #logo{
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+@media (max-width: 700px) {
+  #logo{
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+  #about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  #about > a{color: #fff}
+
+  #about > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+  }
+
+  #about > a:not(:last-child) {
+    margin-right: 7%;
+  }
+
+  .fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+  }
+
+  header.fixed #logo {
+    color: #343434;
+  }
+
+  .fixed #about a {color: #343434}
+  .fixed #about a:hover {color: #7c7c7c}
+
+  #top {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://pp.userapi.com/c631519/v631519336/2b84a/PhLZnBvkn_4.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  @media (min-width: 1001px) {
+    #top {
+          font-size: 2.5em;
+    }
+  }
+  @media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+          font-size: 2em;
+    }
+  }
+  @media (max-width: 650px) {
+    #top {
+          font-size: 1.3em;
+          padding-top: 50%;
+    }
+  }
+  #top h1 {
+    padding-top: 20%;
+  }
+  #top h3 {
+    color: #ccc
+  }
+
+  #form_input input {
+    margin-bottom: 25px;
+    width: 50%;
+    padding: 10px 2%;
+    border-radius: 25px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+  }
+  #form_input input:focus {
+    border-color: #333;
+  }
+  #form_input select {
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 1em;
+    background-color: grey;
+
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+  }
+
+
+  .btn {
+    float: right;
+    margin-right: 20%;
+    border-radius: 25px;
+    padding: 3px 5px;
+    font-size: 1em;
+    background-color: grey;
+
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+  }
+  .btn:hover {
+    text-shadow: #000 0 0 10px;
+
+  }
+  #main{
+    border-color: #fff;
+    border-top: 2px dashed #e4e3e3
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  #main div {
+    width: 40%;
+    margin-left: 10%;
+    float: left;
+  }
+  #main .title {
+    padding-left: 300px;
+    font-weight: lighter;
+    color: #a3a0ad;
+    margin-bottom: 20px;
+    font-size: 3.2em;
+  }
+  #main p {
+    font-family: Arimo, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    text-align: justify;
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  #contacts{
+    border-color: #fff;
+    border-top: 2px dashed #e4e3e3
+    width: 100%;
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  #contacts div {
+    width: 40%;
+    margin-left: 10%;
+    float: left;
+  }
+  #contacts .title {
+    padding-left: 70px;
+    font-weight: lighter;
+    color: #a3a0ad;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+  }
+  #contacts p {
+    font-family: Arimo, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    text-align: justify;
+    font-size: 1.0em;
+    margin-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }

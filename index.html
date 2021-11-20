@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>elTech</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>elTech</span>
+    </div>
+    <div id="about">
+    <a href="#"title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+    <a href="#"title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+    <a href="#"title="Ответы на вопросы" onclick="slowScroll('#FAQ')">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Здравствуйте</h1>
+    <h3>Введите номер студ билета:</h3><br>
+    <form id="form_input">
+      <input type="text" placeholder="Ваш номер" name="number" id="number"><br>
+      <select name="lesson">
+        <option value="math">Математика</option>
+        <option value="phys">Физика</option>
+        <option value="prog">Программирование</option>
+      </select>
+      <div id="send_number" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="main">
+    <span class="title">Возможности</span><br>
+    <p>Наша команда предлагает веб-сервис по получению направлений на день качествa.
+Вами вводятся номер студенческого билета и предмет, который вы хотите исправить, и система автоматически проверяет, можете ли вы пересдать, и в случае успеха отправляет соответствующее уведомление в деканат.
+Если же, по каким то причинам, вы не можете этого сделать, то она предлагает напрямую связаться с деканатом.</p>
+  </div>
+  <div id="contacts">
+    <span class="title">Телефоны</span><br>
+    <p>Факультет радиотехники и телекоммуникаций (ФРТ) +7 812 234-25-76<br>
+Факультет электроники (ФЭЛ)	+7 812 234-40-63<br>
+Факультет компьютерных технологий и информатики (ФКТИ) +7 812 234-27-46<br>
+Факультет электротехники и автоматики (ФЭА) +7 812 234-39-32<br>
+Факультет информационно-измерительных и биотехнических систем (ФИБС)	+7 812 234-30-59<br>
+Факультет экономики и менеджмента (ФЭМ) +7 812 346-29-24<br>
+Гуманитарный факультет (ГФ) +7 812 234-26-18<br>
+Открытый факультет (ОФ)	+7 812 234-39-37</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id){
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+  $(document).on("scroll", function (){
+    if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+    else
+      $("header").attr("class","fixed");
+  });
+  </script>
+</body>
+</html>
